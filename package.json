@@ -1,0 +1,24 @@
+{
+  "name": "emojiguy",
+  "version": "0.0.1-beta1",
+  "description": "A NPM package to parse the emoji shortcodes for showing in HTML.",
+  "main": "index.js",
+  "homepage": "https://github.com/Soumya-Dey/emoji-guy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soumya-Dey/emoji-guy.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "emoji",
+    "slack",
+    "shortcode",
+    "hexcode",
+    "unicode",
+    "html"
+  ],
+  "author": "Soumya Dey <soumyadey200@gmail.com> (https://soumya-dey.github.io/)",
+  "license": "MIT"
+}
