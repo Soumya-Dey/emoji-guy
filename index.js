@@ -6,7 +6,7 @@ const requiredInput = (param) => {
 
 const emojiRe = /\:([a-zA-Z0-9\-_\+]+)\:(?:\:([a-zA-Z0-9\-_\+]+)\:)?/g;
 
-const parseText = (
+const parseForSlack = (
   text = requiredInput('text'),
   { separateTag = false } = {}
 ) => {
@@ -24,11 +24,9 @@ const parseText = (
   return newText;
 };
 
-const getEmojiList = () => emoji;
-
 const getHtmlCode = (shortcode = requiredInput('shortcode')) =>
   shortcode.startsWith(':') && shortcode.endsWith(':')
     ? emoji[shortcode]
     : emoji[`:${shortcode}:`];
 
-module.exports = { parseText, getEmojiList, getHtmlCode };
+module.exports = { parseForSlack, getHtmlCode };
